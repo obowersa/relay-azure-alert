@@ -1,6 +1,6 @@
-# Jira Server integration
+# Azure Alert Integration
 
-Integration with Jira Server for Puppet Relay.
+Integration with Azure Alerts for Relay
 
 ## Actions
 
