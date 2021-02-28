@@ -1,0 +1,13 @@
+apiVersion: integration/v1
+kind: Step
+name: alert-alert-parse-appinsights
+version: 1
+summary: Parses an Azure Alert context for AppInsights using the common alert schema
+
+description: This step processes the alert context an app insights alert and provides easy to consume outputs
+build:
+  apiVersion: build/v1
+  kind: Docker
+
+publish:
+  repository: TODO

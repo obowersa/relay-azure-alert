@@ -1,0 +1,23 @@
+apiVersion: integration/v1
+kind: Trigger
+name: azure-alert-webhook
+version: 1
+summary: Azure alert webhook trigger for alerts using the common alert schema
+description: |
+  Accepts incomming azure alerts which follow the common alert schema, and emits the essential section of the schema, with the alert context for additional processing if required
+responders:
+- webhook
+
+schemas:
+  spec:
+    $schema: http://json-schema.org/draft-07/schema#
+  event:
+    source: file
+    file: event.schema.json
+
+build:
+  apiVersion: build/v1
+  kind: Docker
+
+publish:
+  repository: TODO

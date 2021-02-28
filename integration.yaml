@@ -1,0 +1,19 @@
+apiVersion: integration/v1
+kind: Integration
+name: azure-alert
+channel: alpha
+version: v20210227
+summary: Azure Alert
+license: Apache-2.0
+homepage: https://github.com/obowersa
+source: git://github.com//obowersa
+
+description: |
+  Azure Alerts proactively notify you when issues are found with your infrastructure or application using your monitoring data in Azure Monitor and App Insights
+owner:
+  name: Owen Bower Adams
+  email: owen@obowersa.net
+  url: github.com/obowersa
+
+tags:
+- azure
